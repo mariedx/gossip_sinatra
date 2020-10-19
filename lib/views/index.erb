@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>😱 Bienvenue sur les Gossips de THP  😈</h1>
+
+    <a href="/gossips/new/">Balance un gossip crousty !</a><br/>
+    <br/>
+    
+    <% gossips.each_with_index do |gossip, i| %><br/>
+      <a href="/gossips/<%= i %>/"> Découvre le potin <%= i+1 %><br/></a>
+    <% end %>
+
+  </body>
+</html>
