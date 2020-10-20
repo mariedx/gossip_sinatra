@@ -28,5 +28,4 @@ class ApplicationController < Sinatra::Base
     Gossip.update(params['id'].to_i, params["gossip_author"], params["gossip_content"])
     redirect '/'
   end
-
-end 
+end
